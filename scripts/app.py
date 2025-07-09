@@ -38,7 +38,7 @@ lead_scores = [tag_lead(p) for p in probabilities]
 crm_table = pd.DataFrame({
     "User ID " : data["user_id"],
     "Purchase Probability" : probabilities,
-    "Time of Activity" : data["hour_24"] - ,
+    "Time of Activity" : data["hour_24"],
     "Predicted Buyer" : predictions.astype(bool),
     "Lead Score" : lead_scores
     
