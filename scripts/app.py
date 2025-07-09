@@ -4,7 +4,6 @@ import joblib
 from clean_data import Clean_Data
 
 model = joblib.load("outputs/purchase_classifier_pipeline.joblib")
-joblib.dump(model, "outputs/purchase_classifier_pipeline.joblib", compress=3)
 data = pd.read_parquet("data/processed/2019_Oct_clean.parquet")
 clean = Clean_Data()
 st.title("Customer Purchase Predictor")
