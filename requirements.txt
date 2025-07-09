@@ -4,3 +4,4 @@ joblib
 polars
 numpy
 scikit-learn
+pyarrow
