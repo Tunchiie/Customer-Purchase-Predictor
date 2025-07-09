@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
-from scripts.clean_data import Clean_Data
+from clean_data import Clean_Data
 
 model = joblib.load("outputs/purchase_classifier_pipeline.joblib")
 data = pd.read_parquet("data/processed/2019_Oct_clean.parquet")
